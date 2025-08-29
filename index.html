@@ -1,101 +1,374 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ACAPRA - Proteção Animal</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACAPRA - Associação de Proteção Animal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><img src="img/Logo.png" id="Logo" alt="Logo Acapra"></li>
-                <li>QUEM SOMOS</li>
-                <li>HISTÓRIAS DE ADOÇÃO</li>
-                <li>ESTATÍSTICAS</li>
-                <li>NOTÍCIAS</li>
-                <li>MAUS-TRATOS</li>
-                <li>CONTATO</li>
-                <li>MISSÃO</li>
-            </ul>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="img/logo.png" alt="Logo ACAPRA" class="logo">
+                    <span class="logo-text">ACAPRA</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#quem-somos" class="nav-link">Quem Somos</a></li>
+                    <li class="nav-item"><a href="#historias" class="nav-link">Histórias</a></li>
+                    <li class="nav-item"><a href="#estatisticas" class="nav-link">Estatísticas</a></li>
+                    <li class="nav-item"><a href="#noticias" class="nav-link">Notícias</a></li>
+                    <li class="nav-item"><a href="#maus-tratos" class="nav-link">Maus-Tratos</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="#doacao" class="nav-link cta-button">Doar</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section class="centralizado">
-        <a href="doacao.html">
-            <img src="img/sejaumdoador.png" width="400px" height="380px" alt="Seja um Doador">
-        </a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Transformando Vidas, Uma Adoção por Vez</h1>
+                <p class="hero-subtitle">Somos uma organização dedicada ao resgate, proteção e reabilitação de animais em situação de vulnerabilidade.</p>
+                <div class="hero-buttons">
+                    <a href="#doacao" class="btn btn-primary">Seja um Doador</a>
+                    <a href="#adocao" class="btn btn-secondary">Adotar Animal</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/animal_adoption_2.jpg" alt="Animais para adoção" class="hero-img">
+            </div>
+        </div>
     </section>
 
-    <section class="quemsomos">
-        <h2>QUEM SOMOS</h2>
-        <p>
-            Somos uma organização dedicada ao resgate, proteção e reabilitação de animais em situação de
-            vulnerabilidade. Nosso compromisso é proporcionar amor, cuidado e um lar seguro para cães e gatos
-            abandonados ou em risco. Atuamos com resgates, adoções responsáveis e conscientização sobre bem-estar
-            animal, sempre buscando um futuro melhor para cada vida que cruzamos. Junte-se a nós nessa missão de
-            transformar histórias e espalhar o respeito aos animais!
-        </p>
+    <!-- Quem Somos -->
+    <section id="quem-somos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Quem Somos</h2>
+                <p class="section-subtitle">Conheça nossa história e missão</p>
+            </div>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p>Somos uma organização dedicada ao resgate, proteção e reabilitação de animais em situação de vulnerabilidade. Nosso compromisso é proporcionar amor, cuidado e um lar seguro para cães e gatos abandonados ou em risco.</p>
+                    <p>Atuamos com resgates, adoções responsáveis e conscientização sobre bem-estar animal, sempre buscando um futuro melhor para cada vida que cruzamos. Junte-se a nós nessa missão de transformar histórias e espalhar o respeito aos animais!</p>
+                </div>
+                <div class="content-image">
+                    <img src="img/animal_adoption_1.jpg" alt="Animais resgatados" class="section-img">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="missao">
-        <h2>NOSSA MISSÃO</h2>
-        <p>
-            Nossa missão é resgatar, proteger e reabilitar animais em situação de abandono ou maus-tratos,
-            proporcionando a eles cuidado, amor e a chance de um novo lar. Trabalhamos para promover a adoção
-            responsável e a conscientização sobre bem-estar animal, incentivando o respeito e a compaixão por todas as
-            vidas
-        </p>
+    <!-- Nossa Missão -->
+    <section id="missao" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossa Missão</h2>
+                <p class="section-subtitle">O que nos move todos os dias</p>
+            </div>
+            <div class="mission-content">
+                <p>Nossa missão é resgatar, proteger e reabilitar animais em situação de abandono ou maus-tratos, proporcionando a eles cuidado, amor e a chance de um novo lar. Trabalhamos para promover a adoção responsável e a conscientização sobre bem-estar animal, incentivando o respeito e a compaixão por todas as vidas.</p>
+            </div>
+        </div>
     </section>
 
-    <section class="historia">
-        <h2>HISTÓRIAS DE ADOÇÃO</h2>
-        <p>
-            A cachorrinha Luna foi encontrada em uma noite chuvosa, encolhida em um canto, com o olhar triste e o pelo
-            sujo. Assustada e debilitada, ela mal conseguia se mover. Resgatada por nossa equipe, recebeu cuidados
-            veterinários, alimentação e, principalmente, carinho.
-            Com o tempo, Luna voltou a confiar nos humanos. Seu olhar, antes apagado, brilhou novamente. Então, um dia
-            especial chegou: Ana, uma jovem que sempre sonhou em ter um cãozinho, conheceu Luna. Foi amor à primeira
-            vista!
-            Hoje, Luna vive cercada de amor, brinca no quintal e dorme quentinha ao lado de sua nova família. Sua
-            história é um lembrete de que todo animal merece uma segunda chance.
-        </p>
+    <!-- Estatísticas -->
+    <section id="estatisticas" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Números</h2>
+                <p class="section-subtitle">O impacto da nossa missão</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Animais Adotados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="45">0</div>
+                    <div class="stat-label">Animais Disponíveis</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="300">0</div>
+                    <div class="stat-label">Castrações Realizadas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Animais Resgatados</div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="noticias">
-        <h2>PORTAL DE NOTÍCIAS</h2>
-        <img src="img/Lojinha.png" width="450px" height="450px" alt="Foto Instagram">
-        <p>Acesse a nossa lojinha através do link:</p>
-        <a href="https://www.instagram.com/lojinhaacaprabrusque?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            target="_blank">Lojinha Acapra</a>
-        <p>Ou escaneie nosso QRCode </p>
-        <img src="img/qrcode.png" width="250px" height="280px" alt="QrCode">
+    <!-- Histórias de Adoção -->
+    <section id="historias" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Histórias de Adoção</h2>
+                <p class="section-subtitle">Cada animal tem uma história única</p>
+            </div>
+            <div class="stories-container">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="img/animal_adoption_3.png" alt="Luma - História de adoção" class="story-img">
+                    </div>
+                    <div class="story-content">
+                        <h3 class="story-title">A História da Luma</h3>
+                        <p class="story-text">A cachorrinha Luma foi encontrada em uma noite chuvosa, encolhida em um canto, com o olhar triste e o pelo sujo. Assustada e debilitada, ela mal conseguia se mover. Resgatada por nossa equipe, recebeu cuidados veterinários, alimentação e, principalmente, carinho.</p>
+                        <p class="story-text">Com o tempo, Luma voltou a confiar nos humanos. Seu olhar, antes apagado, brilhou novamente. Então, um dia especial chegou: Ana, uma jovem que sempre sonhou em ter um cãozinho, conheceu Luma. Foi amor à primeira vista!</p>
+                        <p class="story-text">Hoje, Luma vive cercada de amor, brinca no quintal e dorme quentinha ao lado de sua nova família. Sua história é um lembrete de que todo animal merece uma segunda chance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-
-    <section class="maus-tratos">
-        <h2>INFORMAÇÕES SOBRE MAUS-TRATOS</h2>
-        <p>
-            Maus-tratos são crimes que envolvem violência física, psicológica, negligência ou abandono, em animais. No
-            Brasil, são punidos pelo Código Penal (artigo 136) e pela Lei de Crimes Ambientais (Lei nº 9.605/98, artigo
-            32). Denuncie:<br>
-            📞 Disque 100: Serviço gratuito para denúncias de violações de direitos humanos.<br>
-            🏛 Delegacias Especializadas: Procure delegacias da mulher, da criança e do adolescente ou de meio
-            ambiente.<br>
-            🚓 190: Em casos de emergência, acione a polícia.
-        </p>
+    <!-- Adoção -->
+    <section id="adocao" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Processo de Adoção</h2>
+                <p class="section-subtitle">Como adotar um animal</p>
+            </div>
+            <div class="adoption-content">
+                <div class="adoption-steps">
+                    <h3>Confira o Processo de Adoção</h3>
+                    <ul class="adoption-list">
+                        <li>Entrevista via WhatsApp com fotos onde o animal irá ficar</li>
+                        <li>Fotos de documentos solicitados pela ONG</li>
+                        <li>Pagamento de taxa de adoção no valor de R$ 30,00</li>
+                    </ul>
+                </div>
+                <div class="adoption-requirements">
+                    <h3>Atenção: O processo será suspenso caso o interessado:</h3>
+                    <ul class="requirements-list">
+                        <li>Não tenha condições financeiras, físicas ou mentais para manter um animal</li>
+                        <li>Pense em deixar o animal acorrentado</li>
+                        <li>Tenha animais não castrados ou vacinados</li>
+                        <li>Apresente algum nível de desrespeito com os voluntários</li>
+                        <li>Tenha residência não telada (gatos) ou não murada (cachorros)</li>
+                    </ul>
+                </div>
+                <div class="adoption-buttons">
+                    <a href="https://forms.gle/bQYFtEDo2iwMqyR57" class="btn btn-primary" target="_blank">Adotar Cachorro</a>
+                    <a href="https://forms.gle/xTgGbvtz3wD5rUPv6" class="btn btn-primary" target="_blank">Adotar Gato</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="contato">
-        <h2>INFORMAÇÕES PARA CONTATO</h2>
-        <p>📱 47 98474-9433<br>📸 Instagram: @acaprabrusquesc</p>
-        <a href="https://www.instagram.com/lojinhaacaprabrusque?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            target="_blank">CLIQUE AQUI E SEJA UM APOIADOR</a>
+    <!-- Doação -->
+    <section id="doacao" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como Você Pode Ajudar</h2>
+                <p class="section-subtitle">Sua doação faz a diferença</p>
+            </div>
+            <div class="donation-content">
+                <div class="donation-info">
+                    <h3>Doe via PIX para ajudar nos custos</h3>
+                    <div class="pix-info">
+                        <strong>Chave PIX: 03.772.251.0001-82</strong>
+                    </div>
+                    <div class="donation-messages">
+                        <div class="donation-message">Doe Amor!</div>
+                        <div class="donation-message">Doe Carinho!</div>
+                        <div class="donation-message">Doe um Lar!</div>
+                    </div>
+                </div>
+                <div class="donation-image">
+                    <img src="img/animal_adoption_4.jpg" alt="Animais precisando de ajuda" class="donation-img">
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Notícias -->
+    <section id="noticias" class="section">
+        <div class="container">
+            <div class="news-content">
+                <div class="news-item">
+                    <h3>Lojinha ACAPRA</h3>
+                    <p>Acesse nossa lojinha e ajude nossa causa comprando produtos exclusivos!</p>
+                    <a href="https://www.instagram.com/lojinhaacaprabrusque" target="_blank" class="btn btn-secondary">Visitar Lojinha</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maus-Tratos -->
+    <section id="maus-tratos" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Informações sobre Maus-Tratos</h2>
+                <p class="section-subtitle">Conscientização e denúncia</p>
+            </div>
+            <div class="maltreatment-content">
+                <p>Maus-tratos são crimes que envolvem violência física, psicológica, negligência ou abandono em animais. No Brasil, são punidos pelo Código Penal (artigo 136) e pela Lei de Crimes Ambientais (Lei nº 9.605/98, artigo 32).</p>
+                <div class="report-info">
+                    <h3>Como Denunciar:</h3>
+                    <ul class="report-list">
+                        <li><strong>📞 Disque 100:</strong> Serviço gratuito para denúncias de violações de direitos</li>
+                        <li><strong>🏛 Delegacias Especializadas:</strong> Procure delegacias da mulher, da criança e do adolescente ou de meio ambiente</li>
+                        <li><strong>🚓 190:</strong> Em casos de emergência, acione a polícia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <p class="section-subtitle">Tire suas dúvidas</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Qual é o processo de adoção?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O processo inclui entrevista via WhatsApp, envio de documentos e fotos do local onde o animal ficará, e pagamento de taxa de R$ 30,00.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Posso visitar os animais antes de adotar?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, incentivamos que você conheça o animal antes da adoção. Entre em contato conosco para agendar uma visita.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como posso ajudar além da adoção?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você pode fazer doações via PIX, ser um lar temporário, divulgar nosso trabalho ou comprar produtos da nossa lojinha.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Estamos aqui para ajudar</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📱 Telefone</h3>
+                        <p>(47) 98474-9433</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📸 Instagram</h3>
+                        <p>@acaprabrusquesc</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🛍 Lojinha</h3>
+                        <a href="https://www.instagram.com/lojinhaacaprabrusque" target="_blank">@lojinhaacaprabrusque</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Formulário de Contato</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="adocao">Adoção</option>
+                                <option value="doacao">Doação</option>
+                                <option value="voluntario">Ser Voluntário</option>
+                                <option value="lar-temporario">Lar Temporário</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="Logo ACAPRA" class="footer-logo-img">
+                        <span class="footer-logo-text">ACAPRA</span>
+                    </div>
+                    <p>Transformando vidas, uma adoção por vez.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#quem-somos">Quem Somos</a></li>
+                        <li><a href="#historias">Histórias</a></li>
+                        <li><a href="#adocao">Adoção</a></li>
+                        <li><a href="#doacao">Doação</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📱 (47) 98474-9433</p>
+                    <p>📸 @acaprabrusquesc</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/acaprabrusquesc" target="_blank">Instagram</a>
+                        <a href="https://www.instagram.com/lojinhaacaprabrusque" target="_blank">Lojinha</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ACAPRA - Associação de Proteção Animal. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
-
 </html>
+
